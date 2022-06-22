@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi", "MotLookupApi\MotLookupApi.csproj", "{D155FFDE-D83A-479D-ADA8-CB44124CBC39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{24127526-B6C8-49EA-80E2-55BF6DB1C4CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{64827687-B048-40D8-BAF0-E677FB6BFE35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.DataLayer", "MotLookupApi.DataLayer\MotLookupApi.DataLayer.csproj", "{47E56A39-C88D-45EF-9535-80B4C2B85925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.DataLayer.MySQL", "MotLookupApi.DataLayer.MySQL\MotLookupApi.DataLayer.MySQL.csproj", "{2984A12D-BC49-4204-852F-603E44141F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.Framework", "MotLookupApi.Framework\MotLookupApi.Framework.csproj", "{1DE6565B-159B-456A-9971-92CB3B092370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.Gov.Uk", "MotLookupApi.Gov.Uk\MotLookupApi.Gov.Uk.csproj", "{BAC79A01-440E-4ABE-9B81-82577767DF32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D155FFDE-D83A-479D-ADA8-CB44124CBC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D155FFDE-D83A-479D-ADA8-CB44124CBC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D155FFDE-D83A-479D-ADA8-CB44124CBC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D155FFDE-D83A-479D-ADA8-CB44124CBC39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E56A39-C88D-45EF-9535-80B4C2B85925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E56A39-C88D-45EF-9535-80B4C2B85925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E56A39-C88D-45EF-9535-80B4C2B85925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E56A39-C88D-45EF-9535-80B4C2B85925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2984A12D-BC49-4204-852F-603E44141F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2984A12D-BC49-4204-852F-603E44141F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2984A12D-BC49-4204-852F-603E44141F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2984A12D-BC49-4204-852F-603E44141F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE6565B-159B-456A-9971-92CB3B092370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE6565B-159B-456A-9971-92CB3B092370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE6565B-159B-456A-9971-92CB3B092370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE6565B-159B-456A-9971-92CB3B092370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47E56A39-C88D-45EF-9535-80B4C2B85925} = {24127526-B6C8-49EA-80E2-55BF6DB1C4CC}
+		{2984A12D-BC49-4204-852F-603E44141F01} = {24127526-B6C8-49EA-80E2-55BF6DB1C4CC}
+		{1DE6565B-159B-456A-9971-92CB3B092370} = {64827687-B048-40D8-BAF0-E677FB6BFE35}
+		{BAC79A01-440E-4ABE-9B81-82577767DF32} = {64827687-B048-40D8-BAF0-E677FB6BFE35}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA01E622-C651-4FB9-A0FA-32F31C802B15}
+	EndGlobalSection
+EndGlobal
