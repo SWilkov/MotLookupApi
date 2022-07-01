@@ -3,19 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi", "MotLookupApi\MotLookupApi.csproj", "{D155FFDE-D83A-479D-ADA8-CB44124CBC39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotLookupApi", "MotLookupApi\MotLookupApi.csproj", "{D155FFDE-D83A-479D-ADA8-CB44124CBC39}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{24127526-B6C8-49EA-80E2-55BF6DB1C4CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{64827687-B048-40D8-BAF0-E677FB6BFE35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.DataLayer", "MotLookupApi.DataLayer\MotLookupApi.DataLayer.csproj", "{47E56A39-C88D-45EF-9535-80B4C2B85925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotLookupApi.DataLayer", "MotLookupApi.DataLayer\MotLookupApi.DataLayer.csproj", "{47E56A39-C88D-45EF-9535-80B4C2B85925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.DataLayer.MySQL", "MotLookupApi.DataLayer.MySQL\MotLookupApi.DataLayer.MySQL.csproj", "{2984A12D-BC49-4204-852F-603E44141F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotLookupApi.DataLayer.MySQL", "MotLookupApi.DataLayer.MySQL\MotLookupApi.DataLayer.MySQL.csproj", "{2984A12D-BC49-4204-852F-603E44141F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.Framework", "MotLookupApi.Framework\MotLookupApi.Framework.csproj", "{1DE6565B-159B-456A-9971-92CB3B092370}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotLookupApi.Framework", "MotLookupApi.Framework\MotLookupApi.Framework.csproj", "{1DE6565B-159B-456A-9971-92CB3B092370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApi.Gov.Uk", "MotLookupApi.Gov.Uk\MotLookupApi.Gov.Uk.csproj", "{BAC79A01-440E-4ABE-9B81-82577767DF32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotLookupApi.Gov.Uk", "MotLookupApi.Gov.Uk\MotLookupApi.Gov.Uk.csproj", "{BAC79A01-440E-4ABE-9B81-82577767DF32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotLookupApi.Dvla", "MotLookupApi.Dvla\MotLookupApi.Dvla.csproj", "{3C8D21DE-7236-4D37-BC0C-DFA96992EF8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AE5F943D-87A6-4962-8089-DB9437AAE633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotLookupApiTests", "MotLookupApiTests\MotLookupApiTests.csproj", "{3F29542A-35B0-4DCE-914C-22B0E24EB091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +49,14 @@ Global
 		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC79A01-440E-4ABE-9B81-82577767DF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C8D21DE-7236-4D37-BC0C-DFA96992EF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8D21DE-7236-4D37-BC0C-DFA96992EF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8D21DE-7236-4D37-BC0C-DFA96992EF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8D21DE-7236-4D37-BC0C-DFA96992EF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F29542A-35B0-4DCE-914C-22B0E24EB091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F29542A-35B0-4DCE-914C-22B0E24EB091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F29542A-35B0-4DCE-914C-22B0E24EB091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F29542A-35B0-4DCE-914C-22B0E24EB091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +66,8 @@ Global
 		{2984A12D-BC49-4204-852F-603E44141F01} = {24127526-B6C8-49EA-80E2-55BF6DB1C4CC}
 		{1DE6565B-159B-456A-9971-92CB3B092370} = {64827687-B048-40D8-BAF0-E677FB6BFE35}
 		{BAC79A01-440E-4ABE-9B81-82577767DF32} = {64827687-B048-40D8-BAF0-E677FB6BFE35}
+		{3C8D21DE-7236-4D37-BC0C-DFA96992EF8C} = {64827687-B048-40D8-BAF0-E677FB6BFE35}
+		{3F29542A-35B0-4DCE-914C-22B0E24EB091} = {AE5F943D-87A6-4962-8089-DB9437AAE633}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA01E622-C651-4FB9-A0FA-32F31C802B15}

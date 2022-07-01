@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Net;
 using MediatR;
 using Microsoft.Azure.Functions.Worker;
@@ -9,7 +8,6 @@ using MotLookupApi.Framework.Interfaces;
 using MotLookupApi.Framework.Models;
 using MotLookupApi.Interfaces;
 using MotLookupApi.Models;
-using Newtonsoft.Json;
 
 namespace MotLookupApi.Functions
 {
@@ -59,11 +57,14 @@ namespace MotLookupApi.Functions
 
       var query = _vehicleSearchTypeFactory.Get(motRequest);
 
-      var motResults = await _motGovServiceWrapper.Get(query.Input, query.SearchType);
-      var existing = await _vehicleService.Get(query.Input, query.SearchType);
+      var motResults = await _motGovServiceWrapper.Get(query.Input, query.SearchType);    
+
+      var existing = await _vehicleService.Get(query.Input, query.SearchType);     
+      
       if (existing != null && existing.Id > 0)
       {
-        if (motResults.MotTests.Count != existing.MotTests.Count)
+        motResults.Id = existing.Id;
+        if (motResults.MotTests is not null && motResults.MotTests.Count != existing.MotTests.Count)
         {
           existing.MotTests = motResults.MotTests;
         }

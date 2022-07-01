@@ -38,9 +38,9 @@ namespace MotLookupApi.Services
 
     public bool IsNewCar(Vehicle vehicle)
     {
-      if (vehicle.MotTestDueDate.HasValue)
+      if (vehicle.MotTestDueDate > DateTime.MinValue)
       {
-        var expiryYear = vehicle.MotTestDueDate.Value.Year;
+        var expiryYear = vehicle.MotTestDueDate.Year;
         if (expiryYear > DateTime.Now.Year)
           return true;
       }

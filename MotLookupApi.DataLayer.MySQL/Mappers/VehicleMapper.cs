@@ -28,7 +28,7 @@ namespace MotLookupApi.DataLayer.MySQL.Mappers
         EngineSize = vehicle.EngineSize,
         RegistrationDate = vehicle.RegistrationDate,
         UniqueVehicleId = vehicle.UniqueVehicleId,
-        MotTestDueDate = vehicle.MotTestDueDate.HasValue ? vehicle.MotTestDueDate.Value : DateTime.MinValue,
+        MotTestDueDate = vehicle.MotTestDueDate,
         DvlaId = vehicle.DvlaId.HasValue ? vehicle.DvlaId.Value : 0,
         ManufactureDate = vehicle.ManufactureDate,
         MotTests = vehicle.MotTests == null || !vehicle.MotTests.Any() ? null 
