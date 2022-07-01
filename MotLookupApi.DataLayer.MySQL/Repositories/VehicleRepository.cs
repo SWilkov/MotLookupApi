@@ -35,8 +35,7 @@ namespace MotLookupApi.DataLayer.MySQL.Repositories
         throw new ArgumentNullException(nameof(vehicle));
 
       var dm = _vehicleMapper.Map(vehicle);
-      var exists = await _vehicleReadRepository.Exists(vehicle.Registration, vehicle.UniqueVehicleId);
-      if (vehicle.Id == default(int) || !exists)
+      if (vehicle.Id == default(int))
       {
         dm.CreatedAt = DateTime.Now;
         var entity = await _context.Vehicles.AddAsync(dm);
@@ -52,14 +51,23 @@ namespace MotLookupApi.DataLayer.MySQL.Repositories
       }
       else
       {
-        var updated =  _context.Vehicles.Update(dm);
-        var rows = await _context.SaveChangesAsync();
-        if (rows == default(int))
+        var existing = _context.Vehicles.FirstOrDefault(x => x.Id == vehicle.Id);
+        if (existing is not null)
         {
-          //TODO log
-        }
+          _context.Entry(existing).CurrentValues.SetValues(dm);
+          var rows = await _context.SaveChangesAsync();
+          if (rows == default(int))
+          {
+            //TODO log
+          }
 
-        return _vehicleMapper.Map(updated.Entity);
+          return _vehicleMapper.Map(dm);
+        } 
+        else
+        {
+          return vehicle;
+        }
+        
       }
     }    
   }

@@ -15,7 +15,7 @@ namespace MotLookupApi.Gov.Uk.Mappers
         return null;
       
       var vehicle = new Vehicle
-      {
+      {        
         Make = vehicleGovModel.Make,  
         Model = vehicleGovModel.Model,
         PrimaryColour = vehicleGovModel.PrimaryColour ?? String.Empty,
@@ -25,7 +25,7 @@ namespace MotLookupApi.Gov.Uk.Mappers
         ManufactureDate = vehicleGovModel.ManufactureDate.HasValue ? vehicleGovModel.ManufactureDate.Value : DateTime.MinValue,
         RegistrationDate = vehicleGovModel.RegistrationDate.HasValue ? vehicleGovModel.RegistrationDate.Value : DateTime.MinValue,
         FirstUsedDate = vehicleGovModel.FirstUsedDate,
-        MotTestDueDate = vehicleGovModel.MotTestDueDate == DateTime.MinValue ? (DateTime?)null : vehicleGovModel.MotTestDueDate,
+        MotTestDueDate = vehicleGovModel.MotTestDueDate,
         DvlaId = vehicleGovModel.DvlaId,
         UniqueVehicleId = vehicleGovModel.VehicleId ?? String.Empty
       };

@@ -18,6 +18,14 @@ namespace MotLookupApi.DataLayer.MySQL.Repositories
       _vehicleMapper = mapper;
     }
 
+    public async Task<IEnumerable<Vehicle>> GetAll()
+    {
+      var all = await _context.Vehicles.ToListAsync();
+      if (all is null) return null;
+
+      return all.Select(x => _vehicleMapper.Map(x));
+    }
+
     public async Task<Vehicle> Get(string registration)
     {
       if (string.IsNullOrEmpty(registration))
@@ -45,6 +53,29 @@ namespace MotLookupApi.DataLayer.MySQL.Repositories
 
       return _vehicleMapper.Map(vehicle);
     }
+
+    public async Task<Vehicle> Test()
+    {
+      var v = await _context.Vehicles.Include(x => x.MotTests)
+                                     .FirstOrDefaultAsync(x => (x.MotTestDueDate != DateTime.MinValue && 
+                                     DateTime.Now >= x.MotTestDueDate.AddDays(-60)) || (x.MotTests != null && x.MotTests.Any() 
+                                     && DateTime.Now > x.MotTests.First().ExpiryDate.AddDays(-60)));
+
+      if (v == null) return null;
+
+      return _vehicleMapper.Map(v);
+    }
+
+    //public async Task<Vehicle> GetByDate(DateTime date)
+    //{
+    //  var vehicle = await _context.Vehicles.Include(x => x.MotTests).ThenInclude(x => x.Comments)
+    //                                       .Where(x => x.ManufactureDate is not null ? DateTime.UtcNow : DateTime.MinValue)
+
+    //  if (vehicle == null)
+    //    return null;
+
+    //  return _vehicleMapper.Map(vehicle);
+    //}
 
     public async Task<bool> Exists(string registration, string vehicleId)
     {

@@ -16,11 +16,13 @@ namespace MotLookupApi.Framework.Models
     public ICollection<MileageStatistics> MileageStatistics { get; set; }
     public ICollection<VehicleQuery> VehicleQueries { get; set; }
 
-    public DateTime? MotTestDueDate { get; set; }
+    public DateTime MotTestDueDate { get; set; }
     public long? DvlaId { get; set; }
     public DateTime ManufactureDate { get; set; }
     public DateTime RegistrationDate { get; set; }
     public string EngineSize { get; set; }
     public string UniqueVehicleId { get; set; }
+
+    public DvlaData DvlaData { get; set; }
   }
 }

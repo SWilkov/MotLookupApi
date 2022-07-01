@@ -11,12 +11,14 @@
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.12" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.0.1" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.3.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MotLookupApi.DataLayer.MySQL\MotLookupApi.DataLayer.MySQL.csproj" />
+    <ProjectReference Include="..\MotLookupApi.Dvla\MotLookupApi.Dvla.csproj" />
     <ProjectReference Include="..\MotLookupApi.Framework\MotLookupApi.Framework.csproj" />
     <ProjectReference Include="..\MotLookupApi.Gov.Uk\MotLookupApi.Gov.Uk.csproj" />
   </ItemGroup>
