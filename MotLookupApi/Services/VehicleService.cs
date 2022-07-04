@@ -33,7 +33,7 @@ namespace MotLookupApi.Services
       if (vehicle == null)
         throw new ArgumentNullException(nameof(vehicle));
 
-      return await _vehicleRepository.Save(vehicle);
+      return await _vehicleRepository.Save(vehicle); 
     }
 
     public bool IsNewCar(Vehicle vehicle)
