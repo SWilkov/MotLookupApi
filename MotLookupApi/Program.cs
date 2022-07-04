@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MotLookupApi.DataLayer.Interfaces;
 using MotLookupApi.DataLayer.MySQL.Extensions;
-using MotLookupApi.Dvla.Extensions;
 using MotLookupApi.Events;
 using MotLookupApi.Factories;
 using MotLookupApi.Framework.Enums;
@@ -57,7 +56,6 @@ var host = new HostBuilder()
 
       #region Services
       services.AddMotLookupApiGov();
-      services.AddDvlaGovData();
 
       services.AddScoped<IVehicleService, VehicleService>();
       services.AddScoped<IVehicleQueryService, VehicleQueryService>();
