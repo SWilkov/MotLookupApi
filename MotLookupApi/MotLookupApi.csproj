@@ -7,7 +7,6 @@
     <Nullable>enable</Nullable>    
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="AW.Utilities.Validation" Version="1.1.0" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.12" />
@@ -21,6 +20,7 @@
     <ProjectReference Include="..\MotLookupApi.Dvla\MotLookupApi.Dvla.csproj" />
     <ProjectReference Include="..\MotLookupApi.Framework\MotLookupApi.Framework.csproj" />
     <ProjectReference Include="..\MotLookupApi.Gov.Uk\MotLookupApi.Gov.Uk.csproj" />
+    <ProjectReference Include="..\MotLookupApi.Utils.Validation\MotLookupApi.Utils.Validation.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

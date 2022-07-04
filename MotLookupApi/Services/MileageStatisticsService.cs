@@ -1,9 +1,9 @@
-﻿using AW.Utilities.Validation.Enums;
-using AW.Utilities.Validation.Interfaces;
-using MotLookupApi.Events;
+﻿using MotLookupApi.Events;
 using MotLookupApi.Framework.Extensions;
 using MotLookupApi.Framework.Models;
 using MotLookupApi.Interfaces;
+using MotLookupApi.Utils.Validation.Enums;
+using MotLookupApi.Utils.Validation.Interfaces;
 
 namespace MotLookupApi.Services
 {

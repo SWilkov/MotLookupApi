@@ -1,4 +1,3 @@
-using AW.Utilities.Validation.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +16,7 @@ using MotLookupApi.Interfaces;
 using MotLookupApi.Models;
 using MotLookupApi.Queries;
 using MotLookupApi.Services;
+using MotLookupApi.Utils.Validation.Interfaces;
 using MotLookupApi.Validators;
 using MotLookupApi.Wrappers;
 using System.Reflection;
