@@ -17,7 +17,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MotLookupApi.DataLayer.MySQL\MotLookupApi.DataLayer.MySQL.csproj" />
-    <ProjectReference Include="..\MotLookupApi.Dvla\MotLookupApi.Dvla.csproj" />
     <ProjectReference Include="..\MotLookupApi.Framework\MotLookupApi.Framework.csproj" />
     <ProjectReference Include="..\MotLookupApi.Gov.Uk\MotLookupApi.Gov.Uk.csproj" />
     <ProjectReference Include="..\MotLookupApi.Utils.Validation\MotLookupApi.Utils.Validation.csproj" />

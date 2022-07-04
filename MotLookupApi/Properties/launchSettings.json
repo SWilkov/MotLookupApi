@@ -7,10 +7,7 @@
       "environmentVariables": {
         "MYSQL_CONN_STR": "Server=localhost; Port=3307; Uid=root; Pwd=secret; database=vehiclestats;",
         "GOV_BASE_URL": "https://beta.check-mot.service.gov.uk/trade/vehicles/mot-tests",
-        "GOV_API_KEY": "DKwFqTtTHt1NG4nTzT1ZwBF6ur9BaaZ5PJ5GV1tg",
-
-        "DVLA_VEHICLE_ENQUIRY_API": "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles",
-        "DVLA_API_KEY": "Sr5ovHRyWZ46c8gmwUCY35eBbFbBlOoF6rRQJNka"
+        "GOV_API_KEY": "DKwFqTtTHt1NG4nTzT1ZwBF6ur9BaaZ5PJ5GV1tg",        
       }
     }
   }

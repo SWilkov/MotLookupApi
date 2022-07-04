@@ -23,6 +23,5 @@ namespace MotLookupApi.Framework.Models
     public string EngineSize { get; set; }
     public string UniqueVehicleId { get; set; }
 
-    public DvlaData DvlaData { get; set; }
   }
 }
