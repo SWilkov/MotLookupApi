@@ -1,9 +1,9 @@
-﻿using AW.Utilities.Validation.Enums;
-using AW.Utilities.Validation.Interfaces;
-using MediatR;
+﻿using MediatR;
 using MotLookupApi.Events;
 using MotLookupApi.Framework.Interfaces;
 using MotLookupApi.Framework.Models;
+using MotLookupApi.Utils.Validation.Enums;
+using MotLookupApi.Utils.Validation.Interfaces;
 
 namespace MotLookupApi.Handlers
 {
