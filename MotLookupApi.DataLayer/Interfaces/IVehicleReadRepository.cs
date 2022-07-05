@@ -12,5 +12,6 @@ namespace MotLookupApi.DataLayer.Interfaces
 
     //TODO remove
     Task<Vehicle> Test();
+    Task<Vehicle> GetFirst();
   }
 }
