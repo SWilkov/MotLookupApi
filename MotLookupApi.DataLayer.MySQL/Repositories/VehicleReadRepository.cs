@@ -26,6 +26,14 @@ namespace MotLookupApi.DataLayer.MySQL.Repositories
       return all.Select(x => _vehicleMapper.Map(x));
     }
 
+    public async Task<Vehicle> GetFirst()
+    {
+      var first = await _context.Vehicles.FirstOrDefaultAsync();
+      if (first is null) return null;
+
+      return _vehicleMapper.Map(first);
+    }
+
     public async Task<Vehicle> Get(string registration)
     {
       if (string.IsNullOrEmpty(registration))
