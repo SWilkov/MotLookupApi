@@ -37,6 +37,8 @@ namespace MotLookupApi.DataLayer.MySQL.Repositories
       if (vehicle == null)
         return null;
 
+      vehicle.MotTests = vehicle.MotTests.OrderBy(x => x.CompletedDate).ToList();
+
       return _vehicleMapper.Map(vehicle);
     }
 
