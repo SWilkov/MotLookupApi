@@ -97,7 +97,7 @@ namespace MotLookupApi.Functions
       saved.MileageStatistics = _mileageStatisticsService.Create(@event);
 
       var response = req.CreateResponse(HttpStatusCode.OK);
-      await response.WriteAsJsonAsync<MotUpdaterResponse>(new MotUpdaterResponse(saved, true));
+      await response.WriteAsJsonAsync<Vehicle>(saved);
       return response;
     }
   }
